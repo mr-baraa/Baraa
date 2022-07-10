@@ -844,3 +844,10 @@ button {
   -ms-transition: all 0.3s ease 0s !important;
   -o-transition: all 0.3s ease 0s !important;
 }
+
+
+#sec2 img,
+#sec1 img {
+  width: 39% !important;
+}
+
