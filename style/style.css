@@ -11,6 +11,54 @@ a {
   cursor: pointer;
 }
 
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: 400;
+  src: url("/fonts/Montserrat-Regular.otf") format("opentype");
+  }
+  
+  @font-face {
+  font-family: Montserrat;
+  font-weight: 200;
+  src: url("/fonts/Montserrat-Hairline.otf") format("opentype");
+  }
+  
+  @font-face {
+  font-family: Montserrat;
+  font-weight: 300;
+  src: url("/fonts/Montserrat-Light.otf") format("opentype");
+  }
+  
+  @font-face {
+  font-family: Montserrat;
+  font-weight: 600;
+  src: url("/fonts/Montserrat-Bold.otf") format("opentype");
+  }
+  
+  @font-face {
+  font-family: Montserrat;
+  font-weight: 700;
+  src: url("/fonts/Montserrat-Black.otf") format("opentype");
+  }
+<IfModule mod_deflate.c>
+
+AddOutputFilterByType DEFLATE image/svg+xml
+
+AddOutputFilterByType DEFLATE text/plain
+
+AddOutputFilterByType DEFLATE text/html
+
+AddOutputFilterByType DEFLATE text/css
+
+AddOutputFilterByType DEFLATE text/javascript
+
+AddOutputFilterByType DEFLATE application/javascript
+
+AddOutputFilterByType DEFLATE application/x-javascript
+
+</IfModule>
+Czytaj dalej na: https://www.frogriot.com/blog/en/how-to-optimize-and-speed-up-your-website-a-complete-guide/
 ::selection {
   background-color: #7f5af0;
   color: #fffffe;
