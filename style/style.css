@@ -41,11 +41,11 @@ h6 {
 
 p {
   color: var(--pr);
-  font-size: 1rem !important;
+  font-size: 1.5rem !important;
 }
 
 h1 {
-  font-size: 2rem !important;
+  font-size: 3rem !important;
 }
 
 ::-webkit-scrollbar {
@@ -438,6 +438,44 @@ textarea:focus {
   }
   .contact img {
     display: none;
+  }
+
+  p {
+    color: var(--pr);
+    font-size: 1rem !important;
+  }
+
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  .f1 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .f1 button {
+    margin: 0 !important;
+    margin-top: 50px;
+  }
+
+  .someofmyprojects {
+    font-size: 1rem !important;
+  }
+
+  .projects img {
+    height: auto !important;
+  }
+
+  footer {
+    font-size: 0.5rem !important;
+  }
+
+  .hover\:bg-gray-100:hover {
+    --tw-bg-opacity: 1;
+    background-color: none !important;
   }
 }
 
