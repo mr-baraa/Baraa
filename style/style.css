@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+  font-family: "Wotfard";
 }
 
 button,
@@ -11,61 +11,59 @@ a {
   cursor: pointer;
 }
 
-
-@font-face {
-  font-family: Montserrat;
-  font-weight: 400;
-  src: url("/fonts/Montserrat-Regular.otf") format("opentype");
-  }
-  
-  @font-face {
-  font-family: Montserrat;
-  font-weight: 200;
-  src: url("/fonts/Montserrat-Hairline.otf") format("opentype");
-  }
-  
-  @font-face {
-  font-family: Montserrat;
-  font-weight: 300;
-  src: url("/fonts/Montserrat-Light.otf") format("opentype");
-  }
-  
-  @font-face {
-  font-family: Montserrat;
-  font-weight: 600;
-  src: url("/fonts/Montserrat-Bold.otf") format("opentype");
-  }
-  
-  @font-face {
-  font-family: Montserrat;
-  font-weight: 700;
-  src: url("/fonts/Montserrat-Black.otf") format("opentype");
-  }
-<IfModule mod_deflate.c>
-
-AddOutputFilterByType DEFLATE image/svg+xml
-
-AddOutputFilterByType DEFLATE text/plain
-
-AddOutputFilterByType DEFLATE text/html
-
-AddOutputFilterByType DEFLATE text/css
-
-AddOutputFilterByType DEFLATE text/javascript
-
-AddOutputFilterByType DEFLATE application/javascript
-
-AddOutputFilterByType DEFLATE application/x-javascript
-
-</IfModule>
-Czytaj dalej na: https://www.frogriot.com/blog/en/how-to-optimize-and-speed-up-your-website-a-complete-guide/
 ::selection {
   background-color: #7f5af0;
   color: #fffffe;
 }
 
+@font-face {
+  font-family: "Wotfard";
+  src: url("../fonts/wotfard/wotfard-semibold-webfont.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Wotfard";
+  src: url("../fonts/wotfard/wotfard-medium-webfont.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Wotfard";
+  src: url("../fonts/wotfard/wotfard-regular-webfont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "League Mono";
+  src: url("../fonts/league-mono/LeagueMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "League Mono";
+  src: url("../fonts/league-mono/LeagueMono-SemiBold.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "League Mono";
+  src: url("../fonts/league-mono/LeagueMono-Bold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
+}
+
 :root {
-  --background: #16161a;
+  --background: #0e141b;
   --headline: #fffffe;
   --pr: #94a1b2;
   --button: #7f5af0;
@@ -134,6 +132,35 @@ Czytaj dalej na: https://www.frogriot.com/blog/en/how-to-optimize-and-speed-up-y
   --nav-border: 2px dashed var(--text-color);
   --card-radius: 0.25em;
   transition: all 0.3s ease;
+  --color-text: hsl(222deg, 22%, 5%);
+  --color-background: hsl(0deg, 0%, 100%);
+  --color-blurred-background: hsla(0deg, 0%, 100%, 0.85);
+  --color-primary: hsl(245deg, 100%, 60%);
+  --color-secondary: hsl(333deg, 100%, 45%);
+  --color-tertiary: hsl(255deg, 85%, 30%);
+  --color-decorative: hsl(200deg, 75%, 65%);
+  --color-muted: hsl(210deg, 55%, 92%);
+  --color-info: hsl(245deg, 100%, 60%);
+  --color-success: hsl(160deg, 100%, 40%);
+  --color-success-background: hsla(160deg, 100%, 40%, 0.1);
+  --color-error: hsl(340deg, 95%, 50%);
+  --color-error-background: hsla(340deg, 95%, 43%, 0.1);
+  --color-alert: hsl(37deg, 100%, 50%);
+  --color-alert-background: hsla(52deg, 100%, 50%, 0.25);
+  --color-subtle-background: hsl(225deg, 25%, 95%);
+  --color-subtle-floating: hsl(0deg, 0%, 100%);
+  --color-homepage-light: hsl(204deg, 67%, 85%);
+  --color-homepage-dark: hsl(202deg, 71%, 90%);
+  --color-homepage-bg: hsl(204deg, 67%, 85%);
+  --color-gray-100: hsl(225deg, 25%, 95%);
+  --color-gray-200: hsl(225deg, 16%, 90%);
+  --color-gray-300: hsl(225deg, 8%, 80%);
+  --color-gray-400: hsl(225deg, 8%, 70%);
+  --color-gray-500: hsl(225deg, 7%, 60%);
+  --color-gray-600: hsl(225deg, 15%, 50%);
+  --color-gray-700: hsl(225deg, 12%, 40%);
+  --color-gray-900: hsl(225deg, 25%, 20%);
+  --color-gray-1000: hsl(225deg, 15%, 15%);
 }
 
 h1,
@@ -147,7 +174,10 @@ h6 {
 
 p {
   color: var(--pr);
-  font-size: 1.5rem !important;
+  font-size: 2ch !important;
+  line-height: 1.8;
+  font-size: 2ch !important;
+  line-height: 1.8;
 }
 
 h1 {
@@ -173,11 +203,99 @@ h1 {
   background-color: var(--secondray);
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
+#sec1 {
+  overflow-x: hidden;
 }
 
+.sec2-video {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec2-video video {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.glow-on-hover {
+  width: 196px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: var(--background);
+  background: var(--button);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #ff0084,
+    #8259ea,
+    #ff000d84,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--button-txt);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 section {
   padding-left: 20px;
   padding-right: 20px;
@@ -191,18 +309,19 @@ body,
 .container,
 nav {
   background-color: var(--background) !important;
-#}
+}
 
 nav,
 footer,
 .projects img {
   border-radius: 6px !important;
-  background: #16161a !important;
-  box-shadow: 7px 7px 14px #09090a, -7px -7px 14px #23232a !important;
-  -webkit-border-radius: 6px !important;
-  -moz-border-radius: 6px !important;
-  -ms-border-radius: 6px !important;
-  -o-border-radius: 6px !important;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 100% !important;
 }
 
 nav ul li a {
@@ -241,6 +360,25 @@ section {
   color: var(--headline);
   flex-direction: column;
   text-align: left;
+  gap: 20px;
+}
+
+#sec2 {
+  width: 100%;
+  background: #010001;
+}
+
+.txt-sec2 {
+  width: 50%;
+}
+
+#sec2 p {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 18px !important;
 }
 
 #sec1 img و #sec2 img {
@@ -265,24 +403,25 @@ section {
   display: none;
   flex-direction: column;
   justify-content: start;
-  padding-top: 50px;
+  height: 100%;
+  padding: 50px;
 }
 
 .projects {
   height: max-content;
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 50px;
-  margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 50px;
+    width: 100%;
 }
 
 .projects img {
-  height: 500px;
-  width: 100%;
+  height: 224px;
+  width: 90% !important;
   object-fit: cover;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -361,6 +500,8 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-weight: 900;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
 }
 
 #sec4 {
@@ -584,8 +725,15 @@ textarea:focus {
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    margin-top: 12%;
-    padding-top: 3%;
+    /* margin-top: 12%; */
+    /* padding-top: 3%; */
+    padding: 10px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 66px;
+    flex-direction: column;
+    text-align: center !important;
   }
   #footer ul {
     display: flex;
@@ -839,9 +987,6 @@ h1.tag {
     background: none !important;
     border: none !important;
   }
-
-
-  
 }
 
 nav,
@@ -850,15 +995,16 @@ footer {
   border: none !important;
   box-shadow: none !important;
   border-radius: 9px !important;
-  background: #12181b !important;
-  border-radius: 9px;
-  border-radius: 9px;
-  background: #12181b;
-  box-shadow: 8px 8px 16px #070a0b, -8px -8px 16px #1d262b !important;
-  -webkit-border-radius: 9px !important;
-  -moz-border-radius: 9px !important;
-  -ms-border-radius: 9px !important;
-  -o-border-radius: 9px !important;
+  background: rgba(255, 255, 255, 0) !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  -ms-border-radius: 10px !important;
+  -o-border-radius: 10px !important;
 }
 
 nav ul li a {
@@ -869,15 +1015,6 @@ nav ul li a {
 .text-sm {
   font-size: 0.8rem !important;
   line-height: 1.25rem !important;
-}
-
-nav {
-  background: rgba(255, 255, 255, 0) !important;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 @media screen and (min-width: 1200px) {
@@ -897,7 +1034,7 @@ button {
 
 #sec2 img,
 #sec1 img {
-  width: 39% !important;
+  width: 30% !important;
 }
 
 section {
@@ -906,6 +1043,9 @@ section {
 
 #sec6 {
   flex-direction: column;
+  height: 100%;
+  padding: 50px;
+  gap: 50px;
 }
 
 .divs {
@@ -937,66 +1077,54 @@ section {
   padding: 10px;
 }
 
-#sec6 .divs div a  , #sec6 .divs div a img{
+#sec6 .divs div a,
+#sec6 .divs div a img {
   height: 90%;
   width: 100%;
   object-fit: cover;
-  border-radius: 10px 10px 0 0 ;
-  -webkit-border-radius: 10px 10px 0 0 ;
-  -moz-border-radius: 10px 10px 0 0 ;
-  -ms-border-radius: 10px 10px 0 0 ;
-  -o-border-radius: 10px 10px 0 0 ;
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
 }
 
-#sec6 .divs div p{
-  color:
-var(--pr)!important;
-color:
-rgb(255, 255, 255);
-background-color:
-#000000;
-background-color:
-rgba(0, 0, 0, 0);
+#sec6 .divs div p {
+  color: var(--pr) !important;
+  color: rgb(255, 255, 255);
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0);
 
-font-size:
-16px !important;
-line-height:
-19.2px;
-vertical-align:
-baseline;
-letter-spacing:
-normal;
-word-spacing:
-0px;
-font-weight:
-400;
-font-style:
-normal;
-font-variant:
-normal;
-text-transform:
-none;
-text-decoration:
-none solid rgb(255, 255, 255);
-text-align:
-left;
-text-indent:
-0px;
-padding: 10px 0 10px 10px;
+  font-size: 16px !important;
+  line-height: 19.2px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-align: left;
+  text-indent: 0px;
+  padding: 10px 0 10px 10px;
 }
 
-
-
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
   #sec6 .divs div {
     width: 42%;
-    height: 47%;}
+    height: 47%;
+  }
 
-    #sec6 h1{
-      margin-top: 45vh;
-    }
+  #sec6 h1 {
+    margin-top: 45vh;
+  }
 
-    #sec6 .divs div p{
-      padding: 0;
-    }
+  #sec6 .divs div p {
+    padding: 0;
+  }
+  #sec2 img,
+  #sec1 img {
+    width: 50% !important;
+  }
 }
