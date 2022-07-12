@@ -10,21 +10,21 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="icon" href="./img/Baraa.png" />
+    <link rel="icon" href="./img/logo.png" />
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/normalize.css">
-    <title>Baraa</title>
+    <title>Baraa AL sher</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
-            <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <div class=" flex flex-wrap justify-between items-center mx-auto" style="justify-content: start !important; gap: 25px;">
                 <a href="index.html" class="flex items-center"  loading="lazy">
                     <img src="./img/logo.png" style="border-radius: 50px !important;" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" loading="lazy" />
                     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
                 </a>
-                <div class="flex items-center md:order-2">
+                <div class="flex items-center md:order-2" id="ico">
                     <button type="button" class="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
               <span class="sr-only">Open user menu</span>
             </button>
@@ -75,6 +75,8 @@
               </ul>
             </div>
             <button
+
+            id="mob-btn"
               data-collapse-toggle="mobile-menu-2"
               type="button"
               class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -161,11 +163,12 @@
           <h1>Baraa Alsher</h1>
           <p>Software & Web Developre</p>
 <a href="https://www.upwork.com/freelancers/~01e85c10340dcc61a0">
-          <button class="glow-on-hover">
-             Upwork Account
-          </button>     </a>   </div>
+          <div class="glow-on-hover">
+   <line><img src="./img/arrow-right.png" alt="" srcset="">  </line>        Upwork Account
+          </div>     </a>   </div>
 
         <img
+        id="sec1img"
           data-aos="fade-left"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"
@@ -216,10 +219,42 @@
           Some Of My Projects 
         </h1>
 
+
+
       <div class="projects">
-        <img  src="img/projects/bus-project.png" loading="lazy" alt="" srcset="">
-        <img  src="img/projects/music-projects" loading="lazy" alt="" srcset="">
-        <img src="img/projects/twitter-projects " loading="lazy" alt="" srcset="">
+        <a href="./projects-html/bus-project.html">
+
+        <div class="proj">
+      <div class="lp"><img src="img/projects/bus-project.png" alt="" srcset=""></div>
+      <div class="rp">
+        
+      <p class="t-rp">Bus Website ( Arabic )</p>  
+      <p class="pr-rp">Bus tickets booking site</p>
+      </div>
+    </div>
+  </a>
+
+    <div class="proj">
+      <div class="lp"><img src="img/projects/twitter-projects" alt="" srcset=""></div>
+      <div class="rp">
+        
+      <p class="t-rp">Twitter Clone</p>  
+      <p class="pr-rp">Twitter site clone with sign & login page</p>
+      </div>
+    </div>
+
+
+
+    <div class="proj">
+      <div class="lp"><img src="img/projects/music-projects" alt="" srcset=""></div>
+      <div class="rp">
+        
+      <p class="t-rp">Music Web Application</p>  
+      <p class="pr-rp">Music web application with 4 pages</p>
+      </div>
+    </div>
+
+
       </div>
      
       
@@ -338,7 +373,7 @@
 
                    
 
-                        <footer id="footer" class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+                        <footer  id="footer" class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
                             <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022
           <a href="https://flowbite.com/" class="hover:underline">Baraa</a>. 
         </span>
